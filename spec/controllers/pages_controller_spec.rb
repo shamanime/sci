@@ -8,7 +8,7 @@ describe PagesController do
       # Define @base_title here.
       #
       @base_title = "SCI"
-    end
+  end
 
   describe "GET 'home'" do
     it "should be successful" do
