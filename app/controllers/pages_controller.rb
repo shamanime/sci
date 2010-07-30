@@ -5,15 +5,15 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contato"
+    @title = "Contact"
   end
   
   def about
-    @title = "Sobre"
+    @title = "About"
   end
   
   def help
-    @title = "Ajuda"
+    @title = "Help"
   end
 
 end
