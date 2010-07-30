@@ -18,10 +18,10 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: sci_development
+  database: sci
   pool: 5
   username: root
-  password:
+  password: 91ftw35
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -34,15 +34,15 @@ test:
   database: sci_test
   pool: 5
   username: root
-  password:
+  password: 91ftw35
   host: localhost
 
 production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: sci_production
+  database: sci
   pool: 5
   username: root
-  password:
+  password: 91ftw35
   host: localhost
