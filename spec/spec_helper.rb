@@ -10,6 +10,10 @@ Spork.prefork do
     require File.dirname(__FILE__) + "/../config/environment"
   end
   require 'rspec/rails'
+  
+  def test_sign_in(user)
+      controller.current_user = user
+  end
 
   # Requires supporting files with custom matchers and macros, etc,
   # in ./support/ and its subdirectories.
