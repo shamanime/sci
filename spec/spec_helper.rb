@@ -40,6 +40,7 @@ Spork.prefork do
     # Emulate initializer set_clear_dependencies_hook in 
     # railties/lib/rails/application/bootstrap.rb
     ActiveSupport::Dependencies.clear
+  
   end
 end
 
