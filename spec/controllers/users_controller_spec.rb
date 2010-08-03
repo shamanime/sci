@@ -61,14 +61,7 @@ describe UsersController do
       end
     end
   end
-  
-  before(:each) do
-      #
-      # Define @base_title here.
-      #
-      @base_title = "SCI"
-  end
-  
+    
   describe "GET 'show'" do
 
     before(:each) do
@@ -118,7 +111,7 @@ describe UsersController do
     it "should have the right title" do
       get 'new'
       response.should have_selector("title",
-                                    :content => @base_title + " | Sign up")
+                                    :content =>"Sign up")
     end
     
     it "should have a name field" do
@@ -194,18 +187,6 @@ describe UsersController do
       it "should sign the user in" do
         post :create, :user => @attr
         controller.should be_signed_in
-      end
-      
-      it "should make a new user" do
-        lambda do
-          visit signup_path
-          fill_in "Name",         :with => "Example User"
-          fill_in "Email",        :with => "user@example.com"
-          fill_in "Password",     :with => "foobar"
-          fill_in "Confirmation", :with => "foobar"
-          click_button
-          response.should render_template('users/show')
-        end.should change(User, :count).by(1)
       end
     end
   end
